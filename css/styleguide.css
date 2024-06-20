@@ -54,22 +54,22 @@
 
 :root {
 
-    --color-dark: rgb(221,129,255);
-    --color-dark-dark: rgb(221,129,255);
+    --color-dark: rgb(42,6,79);
+    --color-dark-dark: rgb(42,6,79);
     --color-light: #9a7676;
-    --color-blue: rgb(221,129,255);
-    --color-blue-dark: rgb(221,129,255);
-    --color-gray: rgb(221,129,255);
+    --color-blue: rgb(42,6,79);
+    --color-blue-dark: rgb(42,6,79);
+    --color-gray: rgb(42,6,79);
     --color-lightgray: #E9EAEB;
-    --color-white: rgb(42,6,79);
+    --color-white: rgb(221,129,255);
     
-    --color-border: rgb(221,129,255);
+    --color-border: rgb(42,6,79);
     --color-border-solid: #D2D2D2;
-    --color-border-light: rgb(221,129,255);
-    --color-border-solid-light: rgb(221,129,255);
+    --color-border-light: rgb(42,6,79);
+    --color-border-solid-light: rgb(42,6,79);
 
-    --color-text: rgb(221,129,255);
-    --color-text-light: rgb(42,6,79);
+    --color-text: rgb(42,6,79);
+    --color-text-light: rgb(42,6,79);;
 
     --alert-error: #ff4444;
     --alert-success: #24C958;
@@ -84,7 +84,6 @@
     --gap-padding: clamp(1.5em, 4vw, 2.5em);
   
 }
-
 @media screen and (max-width: 1200px){
     :root { 
         --container-padding: 6vw;
