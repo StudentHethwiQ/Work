@@ -3639,8 +3639,8 @@ main {
     transform: translate(0);
    }
   }
-  
-/* Hide footer on devices with width 540px or less (phones) */
+  /*
+ Hide footer on devices with width 540px or less (phones)
 @media screen and (max-width: 540px) {
   .footer-wrap,
   .footer,
@@ -3649,4 +3649,4 @@ main {
   .bottom-footer {
     display: none !important;
   }
-}
+}*/
