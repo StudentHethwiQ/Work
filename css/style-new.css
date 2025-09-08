@@ -3676,7 +3676,7 @@ main {
   }
   
 /* Hide footer completely on mobile phones (screen width 540px or less) */
-@media screen and (max-width: 540px) {
+/*@media screen and (max-width: 540px) {
   .footer-wrap,
   .footer,
   .footer-contact,
@@ -3684,5 +3684,5 @@ main {
   .bottom-footer {
     display: none !important;
   }
-}
+}*/
 
