@@ -1,48 +1,48 @@
 /* ------------------------- Fonts -------------------------------------------------- */
 
 @font-face {
-    font-family: 'Dennis Sans';
-    src: url('../fonts/NeueMontreal-Light.otf') format('opentype');
+    font-family: 'sf-pro';
+    src: url('https://github.com/hethwiQ/siteassets/raw/refs/heads/main/fonts/sf-pro/SF-Pro-Display-Light.otf') format('opentype');
     font-weight: 300;
     font-style: normal;
     font-display: auto;
 }
 
 @font-face {
-    font-family: 'Dennis Sans';
-    src: url('../fonts/NeueMontreal-LightItalic.otf') format('opentype');
+    font-family: 'sf-pro';
+    src: url('https://github.com/hethwiQ/siteassets/raw/refs/heads/main/fonts/sf-pro/SF-Pro-Display-LightItalic.otf') format('opentype');
     font-weight: 300;
     font-style: italic;
     font-display: auto;
 }
 
 @font-face {
-    font-family: 'Dennis Sans';
-    src: url('../fonts/NeueMontreal-Regular.otf') format('opentype');
+    font-family: 'sf-pro';
+    src: url('https://github.com/hethwiQ/siteassets/raw/refs/heads/main/fonts/sf-pro/SF-Pro-Display-Regular.otf') format('opentype');
     font-weight: 450;
     font-style: normal;
     font-display: auto;
 }
 
 @font-face {
-    font-family: 'Dennis Sans';
-    src: url('../fonts/NeueMontreal-Italic.otf') format('opentype');
+    font-family: 'sf-pro';
+    src: url('https://github.com/hethwiQ/siteassets/raw/refs/heads/main/fonts/sf-pro/SF-Pro-Display-Italic.otf') format('opentype');
     font-weight: 450;
     font-style: italic;
     font-display: auto;
 }
 
 @font-face {
-    font-family: 'Dennis Sans';
-    src: url('../fonts/NeueMontreal-Bold.otf') format('opentype');
+    font-family: 'sf-pro';
+    src: url('https://github.com/hethwiQ/siteassets/raw/refs/heads/main/fonts/sf-pro/SF-Pro-Display-Bold.otf') format('opentype');
     font-weight: 800;
     font-style: normal;
     font-display: auto;
 }
 
 @font-face {
-    font-family: 'Dennis Sans';
-    src: url('../fonts/NeueMontreal-BoldItalic.otf') format('opentype');
+    font-family: 'sf-pro';
+    src: url('https://github.com/hethwiQ/siteassets/raw/refs/heads/main/fonts/sf-pro/SF-Pro-Display-BoldItalic.otf') format('opentype');
     font-weight: 800;
     font-style: italic;
     font-display: auto;
@@ -54,22 +54,22 @@
 
 :root {
 
-    --color-dark: rgb(17, 0, 34);
-    --color-dark-dark: rgb(17, 0, 34);
+    --color-dark: #0f171a;
+    --color-dark-dark: #0f171a;
     --color-light: #9a7676;
-    --color-blue: #9f7ee7;
-    --color-blue-dark: #5b458b;
-    --color-gray: rgb(17, 0, 34);
-    --color-lightgray: #fcf7ff;
-    --color-white: #fcf7ff;
+    --color-blue: #f59432;
+    --color-blue-dark: #ff8000;
+    --color-gray: #0f171a;
+    --color-lightgray: #f1ff99;
+    --color-white: #f1ff99;
     
-    --color-border: rgb(17, 0, 34);;
-    --color-border-solid: #fcf7ff;
-    --color-border-light: #fcf7ff;
-    --color-border-solid-light: rgb(17, 0, 34);
+    --color-border: #0f171a;;
+    --color-border-solid: #f1ff99;
+    --color-border-light: #f1ff99;
+    --color-border-solid-light: #0f171a;
 
-    --color-text: rgb(17, 0, 34);
-    --color-text-light: rgb(17, 0, 34);;
+    --color-text: #0f171a;
+    --color-text-light: #0f171a;;
 
     --alert-error: #ff4444;
     --alert-success: #24C958;
@@ -101,8 +101,8 @@
 @media screen and (max-width: 540px){
 
     :root { 
-        --color-border: #fcf7ff;
-        --color-border-light: #fcf7ff;
+        --color-border: #f1ff99;
+        --color-border-light: #f1ff99;
         --container-padding: clamp(1.25em, 4vw, 2.5em);
         --section-padding: max(2.5em, 12vh);
     }
@@ -118,7 +118,7 @@ li, ul {padding: 0; margin: 0; list-style: none;}
 
 body {
     -webkit-font-smoothing: antialiased;
-    font-family: 'Dennis Sans', sans-serif;
+    font-family: 'sf-pro', sans-serif;
     color: var(--color-text);
     line-height: 1.6;
     font-weight: 450;
@@ -161,7 +161,7 @@ h1, h2, h3, h4, h5, h6, p, a, li, ul, ol, span, strong, em  {padding: 0; margin:
 h1:last-child, h2:last-child, h3:last-child, h4:last-child, p:last-child, p.big:last-child, p.small:last-child, a:last-child, strong:last-child  {margin-bottom: 0;}
 
 h1 {
-    font-family: 'Dennis Sans', sans-serif;
+    font-family: 'sf-pro', sans-serif;
     font-weight: 450;
     font-style: normal;
     font-size: clamp(3.25em, 7vw, 8em);
@@ -171,7 +171,7 @@ h1 {
 }
   
 h2 {
-    font-family: 'Dennis Sans', sans-serif;
+    font-family: 'sf-pro', sans-serif;
     font-weight: 450;
     font-style: normal;
     font-size: calc(clamp(3.25em, 5vw, 4.5em) * .75);
@@ -180,7 +180,7 @@ h2 {
 }
   
 h3 {
-    font-family: 'Dennis Sans', sans-serif;
+    font-family: 'sf-pro', sans-serif;
     font-weight: 450;
     font-style: normal;
     font-size: clamp(2.66em, 4.65vw, 5.32em);
@@ -189,7 +189,7 @@ h3 {
 }
   
 h4 {
-    font-family: 'Dennis Sans', sans-serif;
+    font-family: 'sf-pro', sans-serif;
     font-weight: 450;
     font-style: normal;
     font-size: clamp(1.55em, 2.3vw, 2.5em);
@@ -198,7 +198,7 @@ h4 {
 }
 
 h5 {
-    font-family: 'Dennis Sans', sans-serif;
+    font-family: 'sf-pro', sans-serif;
     font-weight: 450;
     font-style: normal;
     font-size: .6em;
@@ -211,7 +211,7 @@ h5 {
 
 
 p {
-    font-family: 'Dennis Sans', sans-serif;
+    font-family: 'sf-pro', sans-serif;
     font-weight: 450;
     font-style: normal;
     color: var(--text);
@@ -407,7 +407,7 @@ video.overlay {
 .btn-click {
 	cursor: pointer;
 	border: 0;
-	color: #fcf7ff;
+	color: #f1ff99;
 	background: transparent;
 	border-radius: 2.125em;
 	min-width: 1em;
