@@ -2,7 +2,7 @@
 
 @font-face {
     font-family: 'sf-pro';
-    src: url('https://github.com/hethwiQ/siteassets/raw/refs/heads/main/fonts/sf-pro/SF-Pro-Display-Light.otf') format('opentype');
+    src: url('https://github.com/hethwiQ/siteassets/raw/refs/heads/main/fonts/sf-pro/woff2/SF-Pro-Display-Light.woff2') format('woff2');
     font-weight: 300;
     font-style: normal;
     font-display: auto;
@@ -10,7 +10,7 @@
 
 @font-face {
     font-family: 'sf-pro';
-    src: url('https://github.com/hethwiQ/siteassets/raw/refs/heads/main/fonts/sf-pro/SF-Pro-Display-LightItalic.otf') format('opentype');
+    src: url('https://github.com/hethwiQ/siteassets/raw/refs/heads/main/fonts/sf-pro/woff2/SF-Pro-Display-LightItalic.woff2') format('woff2');
     font-weight: 300;
     font-style: italic;
     font-display: auto;
@@ -18,7 +18,7 @@
 
 @font-face {
     font-family: 'sf-pro';
-    src: url('https://github.com/hethwiQ/siteassets/raw/refs/heads/main/fonts/sf-pro/SF-Pro-Display-Regular.otf') format('opentype');
+    src: url('https://github.com/hethwiQ/siteassets/raw/refs/heads/main/fonts/sf-pro/woff2/SF-Pro-Display-Regular.woff2') format('woff2');
     font-weight: 450;
     font-style: normal;
     font-display: auto;
@@ -26,7 +26,7 @@
 
 @font-face {
     font-family: 'sf-pro';
-    src: url('https://github.com/hethwiQ/siteassets/raw/refs/heads/main/fonts/sf-pro/SF-Pro-Display-Italic.otf') format('opentype');
+    src: url('https://github.com/hethwiQ/siteassets/raw/refs/heads/main/fonts/sf-pro/woff2/SF-Pro-Display-Italic.woff2') format('woff2');
     font-weight: 450;
     font-style: italic;
     font-display: auto;
@@ -34,7 +34,7 @@
 
 @font-face {
     font-family: 'sf-pro';
-    src: url('https://github.com/hethwiQ/siteassets/raw/refs/heads/main/fonts/sf-pro/SF-Pro-Display-Bold.otf') format('opentype');
+    src: url('https://github.com/hethwiQ/siteassets/raw/refs/heads/main/fonts/sf-pro/woff2/SF-Pro-Display-Bold.woff2') format('woff2');
     font-weight: 800;
     font-style: normal;
     font-display: auto;
@@ -42,7 +42,7 @@
 
 @font-face {
     font-family: 'sf-pro';
-    src: url('https://github.com/hethwiQ/siteassets/raw/refs/heads/main/fonts/sf-pro/SF-Pro-Display-BoldItalic.otf') format('opentype');
+    src: url('https://github.com/hethwiQ/siteassets/raw/refs/heads/main/fonts/sf-pro/woff2/SF-Pro-Display-BoldItalic.woff2') format('woff2');
     font-weight: 800;
     font-style: italic;
     font-display: auto;
