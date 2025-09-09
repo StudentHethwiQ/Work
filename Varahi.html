@@ -201,46 +201,44 @@
             </section>
 
 
-            <section class="section single-block block-mobile-devices block_4" data-scroll-section
-                style="background-color: var(--color-dark);">
-                <div class="container no-padding block-padding-sides amount-3">
-                    <div class="row device-nodevice">
-                        <div class="flex-col block-padding-bottom">
-                            <div class="device" data-scroll data-scroll-target=".block_4" data-scroll-speed="1">
-                                <div class="single-image-brand">
-
-                                    <img class="overlay overlay-image-brand lazy"
-                                        src="https://github.com/hethwiQ/siteassets/raw/refs/heads/main/images/Projects/varahi/hero1.webp"
-                                        data-src="https://github.com/hethwiQ/siteassets/raw/refs/heads/main/images/Projects/varahi/hero1.webp"
-                                        width="1080" height="1080" />
-                                </div>
-                            </div>
-                        </div>
-                        <div class="flex-col block-padding-bottom">
-                            <div class="device">
-                                <div class="single-image-brand">
-
-                                    <img class="overlay overlay-image-brand lazy"
-                                        src="https://github.com/hethwiQ/siteassets/raw/refs/heads/main/images/Projects/varahi/hero2.webp"
-                                        data-src="https://github.com/hethwiQ/siteassets/raw/refs/heads/main/images/Projects/varahi/hero2.webp"
-                                        width="1080" height="1080" />
-                                </div>
-                            </div>
-                        </div>
-                        <div class="flex-col block-padding-bottom">
-                            <div class="device" data-scroll data-scroll-target=".block_4" data-scroll-speed="-1">
-                                <div class="single-image-brand">
-
-                                    <img class="overlay overlay-image-brand lazy"
-                                        src="https://github.com/hethwiQ/siteassets/raw/refs/heads/main/images/Projects/varahi/hero3.webp"
-                                        data-src="https://github.com/hethwiQ/siteassets/raw/refs/heads/main/images/Projects/varahi/hero3.webp"
-                                        width="1080" height="1080" />
-                                </div>
-                            </div>
+            <<section class="section single-block block-mobile-devices block_4" data-scroll-section
+        style="background-color: var(--color-dark);">
+        <div class="container no-padding block-padding-sides amount-3">
+            <div class="row device-nodevice">
+                <div class="flex-col block-padding-bottom">
+                    <div class="device" data-scroll data-scroll-target=".block_4" data-scroll-speed="1">
+                        <div class="single-image-brand">
+                            <img class="overlay overlay-image-brand lazy"
+                                src="https://github.com/hethwiQ/siteassets/raw/refs/heads/main/images/Projects/varahi/hero1.webp"
+                                data-src="https://github.com/hethwiQ/siteassets/raw/refs/heads/main/images/Projects/varahi/hero1.webp"
+                                width="1080" height="1080" />
                         </div>
                     </div>
                 </div>
-            </section>
+                <div class="flex-col block-padding-bottom">
+                    <div class="device">
+                        <div class="single-image-brand">
+                            <img class="overlay overlay-image-brand lazy"
+                                src="https://github.com/hethwiQ/siteassets/raw/refs/heads/main/images/Projects/varahi/hero2.webp"
+                                data-src="https://github.com/hethwiQ/siteassets/raw/refs/heads/main/images/Projects/varahi/hero2.webp"
+                                width="1080" height="1080" />
+                        </div>
+                    </div>
+                </div>
+                <div class="flex-col block-padding-bottom">
+                    <div class="device" data-scroll data-scroll-target=".block_4" data-scroll-speed="-1">
+                        <div class="single-image-brand">
+                            <img class="overlay overlay-image-brand lazy"
+                                src="https://github.com/hethwiQ/siteassets/raw/refs/heads/main/images/Projects/varahi/hero3.webp"
+                                data-src="https://github.com/hethwiQ/siteassets/raw/refs/heads/main/images/Projects/varahi/hero3.webp"
+                                width="1080" height="1080" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
             <section class="section case-intro-image once-in block-padding-bottom " data-scroll-section
                 style="padding-top: 10vh;">
                 <div class="container">
@@ -301,6 +299,24 @@
 
     <script src="js/locomotive-scroll.min.js"></script>
     <script defer src="js/index-new.js"></script>
+    <style>
+        .single-image-brand {
+  position: relative;
+  width: 100%;
+  padding-top: 100%; /* 1:1 aspect ratio */
+  overflow: hidden;
+}
+
+.overlay-image-brand {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+    </style>
     <p>some of the elements are taken from mr. dennis Snellenberg</p>
 </body>
 
