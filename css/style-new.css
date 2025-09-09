@@ -1791,7 +1791,7 @@ main.touch .main-wrap {
    height: 0;
    border-radius: 50%;
    border: 0;
-   background: var(--color-blue);
+   background: var(--color-high);
    position: fixed;
    z-index: 26;
    pointer-events: none;
@@ -1897,7 +1897,7 @@ main.touch .main-wrap {
    height: 3em;
    border-radius: 50%;
    border: 0;
-   background: var(--color-blue);
+   background: var(--color-high);
    position: fixed;
    pointer-events: none;
    transform: scale(0);
@@ -1951,7 +1951,7 @@ main.touch .main-wrap {
 
 @keyframes digitalball {
    0% {
-      background: var(--color-blue);
+      background: var(--color-high);
    }
 
    50% {
@@ -1959,7 +1959,7 @@ main.touch .main-wrap {
    }
 
    100% {
-      background: var(--color-blue);
+      background: var(--color-high);
    }
 }
 
@@ -1973,7 +1973,7 @@ main.touch .main-wrap {
    transform: translate(-50%, -50%);
    position: absolute;
    overflow: hidden;
-   background: var(--color-blue);
+   background: var(--color-high);
 }
 
 .digital-ball .overlay {
@@ -3758,20 +3758,22 @@ main.touch .case-intro-image .btn-wrap {
 }
 
 .Shake {
-   height: 3em;
-   width: 8em;
-   border: none;
-   border-radius: 10em;
-   background: transparent;
-   font-size: 4vh;
-   color: rgb(17, 0, 34);
-   font-family: inherit;
-   font-weight: 500;
-}
-
-.Shake:hover {
-   animation: shake3856 0.3s linear infinite both;
-}
+    height: 3em;
+    width: 8em;
+    border: none;
+    border-radius: 10em;
+    background: transparent;
+    font-size: 17px;
+    color: var(--color-dark);
+    font-family: inherit;
+    font-weight: 500;
+    cursor: pointer;
+   }
+   
+   .Shake:hover {
+    animation: shake3856 0.3s linear infinite both;
+    color: var(--color-high);
+   }
 
 @keyframes shake3856 {
    0% {
