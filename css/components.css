@@ -95,8 +95,8 @@
  @media screen and (max-width: 720px){ 
     
     .default-header {
-       padding-top: calc(var(--section-padding) * 1.95);
-       padding-bottom: calc(var(--section-padding) * .75);
+       padding-top: calc(var(--section-padding) * 1.20);
+       padding-bottom: calc(var(--section-padding) * .50);
     }
  
     .default-header h1 span {

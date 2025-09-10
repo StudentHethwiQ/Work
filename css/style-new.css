@@ -1636,7 +1636,7 @@ main.touch .main-wrap {
 }
 
 .overlay-image {
-   border: 2px solid var(--color-dark)
+   border: 0px solid var(--color-dark)
 }
 
 /* ------------------------- Work Tiles - Home -------------------------------------------------- */
