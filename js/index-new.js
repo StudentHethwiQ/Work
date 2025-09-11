@@ -1514,3 +1514,12 @@ function initScrolltriggerAnimations() {
     }, // End Mobile Only Scrolltrigger
   }); // End GSAP Matchmedia
 }
+
+const modalToggle = document.getElementById('varahiToggle');
+modalToggle.addEventListener('change', () => {
+  if (modalToggle.checked) {
+    document.body.classList.add('modal-open');
+  } else {
+    document.body.classList.remove('modal-open');
+  }
+});

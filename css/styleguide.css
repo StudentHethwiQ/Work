@@ -1,53 +1,52 @@
 /* ------------------------- Fonts -------------------------------------------------- */
 
 @font-face {
-    font-family: 'sf-pro';
-    src: url('https://github.com/hethwiQ/siteassets/raw/refs/heads/main/fonts/sf-pro/woff2/SF-Pro-Display-Light.woff2') format('woff2');
-    font-weight: 300;
-    font-style: light;
-    font-display: auto;
+  font-family: 'sf-pro';
+  src: url('../font/sf-pro/SF-Pro-Display-Light.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal; /* corrected from 'light' to valid 'normal' */
+  font-display: swap;
 }
 
 @font-face {
-    font-family: 'sf-pro';
-    src: url('https://github.com/hethwiQ/siteassets/raw/refs/heads/main/fonts/sf-pro/woff2/SF-Pro-Display-LightItalic.woff2') format('woff2');
-    font-weight: 300;
-    font-style: lightitalic;
-    font-display: auto;
+  font-family: 'sf-pro';
+  src: url('../font/sf-pro/SF-Pro-Display-LightItalic.woff2') format('woff2');
+  font-weight: 300;
+  font-style: italic; /* corrected from 'lightitalic' to valid 'italic' */
+  font-display: swap;
 }
 
 @font-face {
-    font-family: 'sf-pro';
-    src: url('https://github.com/hethwiQ/siteassets/raw/refs/heads/main/fonts/sf-pro/woff2/SF-Pro-Display-Regular.woff2') format('woff2');
-    font-weight: 450;
-    font-style: normal;
-    font-display: auto;
+  font-family: 'sf-pro';
+  src: url('../font/sf-pro/SF-Pro-Display-Regular.woff2') format('woff2');
+  font-weight: 400; /* standard regular weight */
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: 'sf-pro';
-    src: url('https://github.com/hethwiQ/siteassets/raw/refs/heads/main/fonts/sf-pro/woff2/SF-Pro-Display-Italic.woff2') format('woff2');
-    font-weight: 450;
-    font-style: italic;
-    font-display: auto;
+  font-family: 'sf-pro';
+  src: url('../font/sf-pro/SF-Pro-Display-Italic.woff2') format('woff2');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: 'sf-pro';
-    src: url('https://github.com/hethwiQ/siteassets/raw/refs/heads/main/fonts/sf-pro/woff2/SF-Pro-Display-Bold.woff2') format('woff2');
-    font-weight: 800;
-    font-style: bold;
-    font-display: auto;
+  font-family: 'sf-pro';
+  src: url('../font/sf-pro/SF-Pro-Display-Bold.woff2') format('woff2');
+  font-weight: 700; /* standard bold weight */
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: 'sf-pro';
-    src: url('https://github.com/hethwiQ/siteassets/raw/refs/heads/main/fonts/sf-pro/woff2/SF-Pro-Display-BoldItalic.woff2') format('woff2');
-    font-weight: 800;
-    font-style: bolditalic;
-    font-display: auto;
+  font-family: 'sf-pro';
+  src: url('../font/sf-pro/SF-Pro-Display-BoldItalic.woff2') format('woff2');
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
 }
-
 
 
 /* ------------------------- Colors -------------------------------------------------- */
@@ -1354,8 +1353,4 @@ select:-webkit-autofill:focus {
    -webkit-box-shadow: 0 0 0px 1000px #fff inset;
    box-shadow: 0 0 0px 1000px #fff inset;
    transition: background-color 5000s ease-in-out 0s;
-}
-
-input[type=radio] {
-   -webkit-appearance: none;
 }
