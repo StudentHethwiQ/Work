@@ -1,3 +1,4 @@
+
 main {
    box-sizing: border-box;
    overflow: hidden;
@@ -1117,7 +1118,9 @@ main.touch .main-wrap {
 }
 
 .work-grid .work-items a:hover {
-   opacity: .33;
+   opacity: 1;
+   color:var(--color-high);
+   
 }
 
 /* ------------------------- Work Grid - Large -------------------------------------------------- */
