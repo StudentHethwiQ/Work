@@ -1120,6 +1120,9 @@ main.touch .main-wrap {
 .work-grid .work-items a:hover {
    opacity: 1;
    color:var(--color-high);
+   /*
+   background-color: var(--color-dark);
+   border-radius: 4rem;*/
    
 }
 
