@@ -45,7 +45,7 @@
         </div>
     </div>
     <main class="main" id="work-single" data-barba="container" data-barba-namespace="work-single"
-        style="background-color: var(--color-inviz) !important; background-image: url('images/bg.jpeg');">
+        style="background-color: var(--color-white) !important;">
         <div class="main-wrap" data-scroll-container>
             <section class="section case-top-wrap ">
                 <header class="section default-header case-header" data-scroll-section>
@@ -157,27 +157,195 @@
                 </section>
             </section>
             <section class="section single-block block-device block_1 block-padding-bottom "
-                style="background-color: var(--color-inviz);" data-scroll-section>
-                <div class="container">
-                    <div class="row device-nodevice">
-                        <div class="flex-col">
-                            <div class="device">
-                                <div class="single-image">
+                style="background-color: var(--color-white);" data-scroll-section>
+                <section class="case-timeline-w">
+  <div class="lane-w">
+    <h2 class="phase-w">Thinking</h2>
 
-                                    <div class="overlay overlay-image playpauze"><video class="overlay"
-                                            src="https://github.com/hethwiQ/siteassets/raw/refs/heads/main/videos/maketh.mp4"
-                                            loop muted playsinline></video></div>
+    <ol class="steps-w">
+      <li class="step-w ghost-w">Client asked me to make a logo for a company called Varahi Bio</li>
+      <li class="step-w ghost-w">Searching internet shows me Varahi is a Hindu goddess</li>
+      <li class="step-w ghost-w">Looking at enough images to make it a familiar face</li>
+      <li class="step-w ghost-w">Crafting logos that suit the client's logo requirements</li>
+    </ol>
 
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+    <div class="rail-w" aria-hidden="true">
+      <span class="node-w node-start-w" aria-hidden="true"></span>
+      <span class="line-w" aria-hidden="true"></span>
+      <span class="node-w node-end-w" aria-hidden="true"></span>
+    </div>
+
+    <h2 class="phase-w results-w">Results</h2>
+  </div>
+</section>
+
+
+<style>
+/* ===== Case Timeline (white bg) – namespaced with -w ===== */
+:root{
+  --case-bg-w:#ffffff;
+  --case-fg-w:#1b1b1f;
+  --case-muted-w:#6e6e75;
+  --case-line-w:#d9d9df;
+  --case-accent-w:#2b2b30;
+  --case-step-max-w:680px;
+}
+
+*{ box-sizing:border-box }
+
+body{
+  margin:0;
+  background:var(--case-bg-w);
+  color:var(--case-fg-w);
+  font:16px/1.6 ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, "Helvetica Neue", Arial;
+}
+
+/* Container */
+.case-timeline-w{
+  display:grid;
+  place-items:center;
+  padding:48px 20px 64px;
+}
+
+/* Two-column desktop lane */
+.lane-w{
+  position:relative;
+  width:100%;
+  max-width:900px;
+  display:grid;
+  grid-template-columns: 240px 1fr;
+  column-gap:28px;
+  align-items:start;
+}
+
+/* Headings */
+.phase-w{
+  grid-column:1;
+  margin:0;
+  font-size:28px;
+  letter-spacing:.2px;
+  font-weight:700;
+}
+.results-w{
+  grid-column:1;
+  margin-top:24px;
+}
+
+/* Steps text */
+.steps-w{
+  grid-column:2;
+  list-style:none;
+  padding:0;
+  margin:0;
+  max-width:var(--case-step-max-w);
+  display:flex;
+  flex-direction:column;
+  gap:10px;
+}
+.step-w{
+  margin:0;
+  padding:6px 0;
+}
+.ghost-w{
+  color:var(--case-muted-w);
+  opacity:.62;
+}
+
+/* Vertical rail between headings */
+.rail-w{
+  position:absolute;
+  left:240px;   /* align to column edge */
+  top:6px;
+  width:28px;
+  height:100%;
+  pointer-events:none;
+}
+.line-w{
+  position:absolute;
+  left:13px;
+  top:34px;     /* below Thinking */
+  bottom:58px;  /* above Results */
+  width:2px;
+  background:var(--case-line-w);
+  border-radius:2px;
+}
+.node-w{
+  position:absolute;
+  left:6px;
+  width:16px;
+  height:16px;
+  border-radius:50%;
+  background:#fff;
+  border:2px solid var(--case-accent-w);
+  box-shadow:0 1px 2px rgba(0,0,0,.07);
+}
+.node-start-w{ top:8px; }
+.node-end-w{ bottom:34px; }
+
+/* Optional subtle entrance */
+.ghost-w:nth-child(1){ animation:f-w 520ms ease 60ms both }
+.ghost-w:nth-child(2){ animation:f-w 520ms ease 160ms both }
+.ghost-w:nth-child(3){ animation:f-w 520ms ease 260ms both }
+.ghost-w:nth-child(4){ animation:f-w 520ms ease 360ms both }
+@keyframes f-w{
+  from{ opacity:.12; transform:translateY(2px) }
+  to{   opacity:.62; transform:none }
+}
+
+/* ===== Mobile layout: stack content, center rail ===== */
+@media (max-width: 768px){
+  .lane-w{
+    grid-template-columns: 1fr;
+    row-gap: 12px;
+    padding-inline: 12px;
+  }
+  .phase-w, .results-w{
+    text-align: center;
+    margin-inline: auto;
+  }
+  .steps-w{
+    max-width: 28ch;         /* keep line length comfortable */
+    margin-inline: auto;
+    text-align: center;
+    gap: 8px;
+  }
+  .step-w{ padding: 4px 0; }
+
+  .rail-w{
+    position: relative;
+    left: 0;
+    width: 100%;
+    height: 120px;          /* consistent height on phones */
+    margin: 6px 0 12px;
+  }
+  .line-w{
+    left: 50%;
+    transform: translateX(-50%);
+    top: 18px;
+    bottom: 18px;
+    width: 2px;
+  }
+  .node-w{
+    left: 50%;
+    transform: translateX(-50%);
+    width: 14px; height: 14px;
+  }
+  .node-start-w{ top: 6px; }
+  .node-end-w{ bottom: 6px; }
+}
+
+/* Ultra-narrow tweak */
+@media (max-width: 360px){
+  .steps-w{ max-width: 25ch; }
+}
+
+    
+</style>
             </section>
 
 
             <section class="section single-block block-mobile-devices block_4" data-scroll-section
-                style="background-color: var(--color-inviz);">
+                style="background-color: var(--color-dark);">
                 <div class="container no-padding block-padding-sides amount-3">
                     <div class="row device-nodevice">
                         <div class="flex-col block-padding-bottom">
